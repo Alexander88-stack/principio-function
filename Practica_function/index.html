@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aguas turbias</title>
+</head>
+<body>
+    <div>
+        <h3 class="water1">mar</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, tempora 
+            sapiente laborum amet vero quam reiciendis sint at molestiae beatae cum voluptate 
+            necessitatibus deserunt quas cupiditate aut dolores tempore. Ducimus?</p>
+    </div>
+    <div class="water2">
+        <h3> rio</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur impedit nihil tenetur 
+            fugiat illum laborum nulla placeat eveniet, 
+            velit commodi officia necessitatibus! Sunt nihil dignissimos aut dicta minima, officia in.</p>
+    </div>
+    <div class="water3">
+        <h3>lago</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Nemo eaque consequatur facilis debitis voluptas qui fugit cumque rem, 
+            reprehenderit voluptates rerum fuga veniam neque 
+            veritatis, nostrum inventore eveniet velit culpa.</p>
+    </div>
+
+   
+    <script>
+        let textoMarElmentsArray = document.getElementsByClassName('water1');
+        let textoMarElemento = textoMarElmentsArray[0];
+        let textoParaconstruirMiObjeto =  textoMarElemento.outerText; // Tengo aquí el texto interno del elemento h3 con class water1
+
+        function constructorObjeto(mar){
+            const obj = {
+                name: 'mar', 
+                property: 'salada',
+                density: 1027 ,
+                detalles:function() {
+                    console.log(`Los detalles son `.constructorObjeto);
+                    
+                        
+                }
+            };
+            
+            return obj;
+        }
+
+        let objetMarCreado = constructorObjeto(textoMarElemento);
+        console.log('constructorObjeto');
+        
+       
+        
+
+       
+        
+        
+    </script>
+    
+</body>
+</html>
